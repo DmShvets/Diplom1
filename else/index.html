@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link rel="shortcut icon" href="img/ukraine-logo.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link  rel = "stylesheet"  href = "https://unpkg.com/aos@next/dist/aos.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="script/script.js"></script>
+		<script src="script/jquery.maskedinput.js"></script>
+	<title>Музей туризму</title>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<header>
+
+
+
+					<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+						<div class="container">
+					  <a class="navbar-brand" href="#">
+					  	<img class="logo" src="img/ukraine-logo.png">
+					  </a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav ml-lg-auto">
+
+					      <li class="nav-item active">
+					        <a class="nav-link" href="#">Головна <span class="sr-only">(current)</span></a>
+					      </li>
+								<li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          Області
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="php/regions.php?region_kyiv=true">Київ</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_vinitska=true">Вінницька</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_volynska=true">Волинська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_dnipropetrovsk=true">Дніпропертовська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_donetsk=true">Донецька</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_zhytomyr=true">Житомирська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_zakarpatska=true">Закарпатська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_zaporozhye=true">Запорізька</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_ivano-frankivska=true">Івано-Франківська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_kyivska=true">Київська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_kirovogradska=true">Кіровоградська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_luganska=true">Луганська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_lvivska=true">Львівська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_mykolaiv=true">Миколаївська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_odessa=true">Одеська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_poltavska=true">Полтавська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_rivnenska=true">Рівненська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_sumska=true">Сумська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_ternopilska=true">Тернопільська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_kharkiv=true">Харківська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_kherson=true">Херсонська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_khmelnytska=true">Хмельницька</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_сherkaska=true">Черкаська</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_chernivetska=true">Чернівецька</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="php/regions.php?region_chernigivska=true">Чернігівська</a>
+							</div>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Готелі</a>
+					      </li>
+					      <li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          Варто відвідати
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="php/should_visit.php?castle_main=true">Фортеці</a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="php/should_visit.php?resort_main=true">Курорти</a>
+					          <div class="dropdown-divider"></div>
+							  <a class="dropdown-item" href="php/should_visit.php?park_main=true">Парки</a>
+							  <div class="dropdown-divider"></div>
+							  <a class="dropdown-item" href="php/should_visit.php?church_main=true">Храми</a>
+							  <div class="dropdown-divider"></div>
+							  <a class="dropdown-item" href="php/should_visit.php?museum_main=true">Музеї</a>
+					        </div>
+					      </li>
+					       <li class="nav-item">
+					        <a class="nav-link" href="#">Cторінка з історії</a>
+					      </li>
+					       <li class="nav-item">
+					        <a class="nav-link" href="#">Наші контакти</a>
+					      </li>
+
+							 <li class="nav-item">
+
+					      </li>
+								<li>
+								<a id="search" class="search-btn">
+									<i class="fa fa-search"></i>
+								</a></li>
+					    </ul>
+					    <!--form class="form-inline my-2 my-lg-0">
+					      <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+					      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Знайти</button>
+					    </form-->
+							<div class="search-form">
+								<form class="" action="php/Search.php?go" method="post" id="searchform">
+									<input type="text" name="name" value="" placeholder="Пошук">
+									<a class="close"><i class="fa fa-times"></i></a>
+									<button type="submit" class="search-go" name="submit" value="Search">Знайти</input>
+								</form>
+							</div>
+					  </div>
+						</div>
+					</nav>
+</header>
+
+<div class="jumbotron jumbotron-fluid height100p banner">
+  <div class="container h100">
+    <div class="contentBox h100">
+    	<div>
+
+    		<h1>МУЗЕЙ ТУРИЗМУ УКРАЇНИ</h1>
+    		<p data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="0">Відкрий для себе Україну</p>
+    	</div>
+    </div>
+  </div>
+</div>
+<section class="sec1">
+	<div class="container">
+		<div class="row">
+			<div class="offset-sm-2 col-sm-8">
+				<div class="headerText text-center">
+					<h2 data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="0">Зацікавить кожного</h2>
+					<p data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="500">В Україні існує безліч цікавих місць, про деякі з них мало хто знає</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4" data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="1000">
+		<a href="php/not_fam_places.php?NFP=true">
+				<div class="placeBox">
+					<div class="imgBx">
+						<img src="img/optymistychna.jpg" class="img-fluid">
+					</div>
+					<div class="content">
+						<h3>Маловідомі місця<br><span>Це варто побачити</span></h3>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="col-sm-4" data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="1000">
+		<a href="Chornobyl.html">
+				<div class="placeBox">
+					<div class="imgBx">
+						<img src="img/coleso.jpg" class="img-fluid">
+					</div>
+					<div class="content">
+						<h3>Зона відчуження<br><span>Прип'ять | Трагедія | Радіація</span></h3>
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="col-sm-4" data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="1000">
+		<a href="php/not_fam_places.php?seven_wonders=true">
+				<div class="placeBox">
+					<div class="imgBx">
+						<img src="img/church_kyiv.jpg" class="img-fluid">
+					</div>
+					<div class="content">
+						<h3>7 чудес України<br><span>Красиво та унікально</span></h3>
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="sec2">
+		<div class="container h100">
+			<div class="contentBox h100">
+				<div>
+					<h2 data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="0">ЮНЕСКО</h2>
+					<p data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="500">Об'єкти Світової спадщини ЮНЕСКО в Україні</p>
+					<a href="" class="btn btnD1">Переглянути</a>
+				</div>
+			</div>
+		</div>
+</section>
+<section class="blog">
+	<div class="container">
+		<div class="row">
+			<div class="offset-sm-2 col-sm-8">
+				<div class="headerText">
+					<h2>Рекомендуємо переглянути</h2>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="blogpost">
+					<div class="imgBx">
+						<img src="img/ktgg.jpg" class="img-fluid">
+
+					</div>
+					<div class="content">
+						<h1>КОЛЕДЖ ТУРИЗМУ І ГОТЕЛЬНОГО ГОСПОДАРСТВА</p>
+						<a href="#" class="btn btnD2">Про коледж</a>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="blogpost">
+					<div class="imgBx">
+						<img src="img/ukraine-logo.png" class="img-fluid">
+					</div>
+					<div class="content">
+						<h1>МУЗЕЙ ТУРИЗМУ</h1>
+						<p>Завітайте до нас</p>
+						<a href="#" class="btn btnD2">Про музей</a>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-6">
+				<div class="blogpost">
+					<div class="imgBx">
+						<img src="img/Ukraine_tur.jpg" class="img-fluid">
+					</div>
+					<div class="content">
+						<h1>Україна</h1>
+						<p>Розвиток туризму</p>
+						<a href="#" class="btn btnD2">Про розвиток</a>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="blogpost">
+					<div class="imgBx">
+						<img src="img/vilage_turysm.jpg" class="img-fluid">
+
+					</div>
+					<div class="content">
+						<h1>Туризм в Україні</h1>
+						<p>Види туризму</p>
+						<a href="#" class="btn btnD2">Про туризм</a>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+<section class="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="headerText text-center">
+					<h2>Зв'язок</h2>
+					<p>Ми можемо допомогти обрати час для відвідування нашого музею туризму України<br>
+					Залиште дані і ми зв'яжемось з Вами</p>
+				</div>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="offset-sm-2 col-sm-8">
+				<form class="" action="php/phone.php" method="post">
+					<div class="form-group">
+						<label>Ім'я</label>
+						<input type="text" name="name_contact" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Електронна пошта</label>
+						<input type="text" name="el_contact" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Телефон</label>
+						<input type="tel" name="tel_contact" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Повідомлення</label>
+						<textarea class=" form-control textarea" name="mess_contact"></textarea>
+					</div>
+					<div class="form-group text-center">
+						<button type="submit" class="btn btnD1">Відправити</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--////////////////////CONTENt\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<ul class="sci">
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter"></i></a></li>
+					<li><a href=""><i class="fa fa-google"></i></a></li>
+				</ul>
+				<p class="cpryt">
+					© 2020 All Rights Reserved | Created by <a href="#">&laquo;ShO‽&raquo;</a></p>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

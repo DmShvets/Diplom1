@@ -1,0 +1,65 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.out_link,
+.logo{
+  position: fixed;
+    top: 15px;
+  width: 100px;
+  height: 100px;
+}
+.out_link a img,
+.logo a img{
+  width: 100%;
+  height: 100%;
+}
+.out_link{
+right: 10%;
+}
+.parallax-container{
+  width: 100%;
+  height: 100vh !important;
+}
+
+section{
+  width: 100%;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+}
+section .content{
+  max-width: 1000px;
+  margin: 15px auto;
+  color: #fff;
+    background: #000000;
+}
+section .content p{
+  margin-bottom: 0;
+
+}
+section .content h1{
+  margin-top: 0;
+      font-size: 30px;
+}
+@media (max-width: 992px) {
+  section .content p{
+    font-size: 14px;
+  }
+  section .content h1{
+    font-size: 20px;
+  }
+  .parallax-container{
+    height: 50vh !important;
+  }
+  section .content{
+    margin: 5px 10px;
+  }
+  .out_link,
+  .logo{
+    width: 70px;
+    height: 70px;
+  }
+}

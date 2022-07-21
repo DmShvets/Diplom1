@@ -1,0 +1,28 @@
+#map path{
+	transition: .5s;
+}
+path{
+	fill: #2F3F80 !important;
+}
+#map path:hover{
+  fill:#ff0;
+	transition: .5s;
+}
+#Kh{
+	transform: rotate(290deg);
+}
+#T{
+	transform: rotate(65deg);
+}
+#U{
+	transform: rotate(40deg);
+}
+#Ch{
+	transform: rotate(-15deg);
+}
+#I{
+	transform: rotate(45deg);
+}
+#F{
+	transform: rotate(45deg);
+}
